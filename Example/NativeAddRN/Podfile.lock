@@ -1,0 +1,74 @@
+PODS:
+  - aliyun-oss-rn-sdk (0.0.9-beta.2):
+    - AliyunOSSiOS
+    - React
+  - AliyunOSSiOS (2.10.2)
+  - React (0.44.0):
+    - React/Core (= 0.44.0)
+  - react-native-image-picker (0.14.3):
+    - React
+  - React/Core (0.44.0):
+    - React/cxxreact
+    - Yoga (= 0.44.0.React)
+  - React/cxxreact (0.44.0):
+    - React/jschelpers
+  - React/jschelpers (0.44.0)
+  - React/RCTActionSheet (0.44.0):
+    - React/Core
+  - React/RCTGeolocation (0.44.0):
+    - React/Core
+  - React/RCTImage (0.44.0):
+    - React/Core
+    - React/RCTNetwork
+  - React/RCTNetwork (0.44.0):
+    - React/Core
+  - React/RCTPushNotification (0.44.0):
+    - React/Core
+  - React/RCTSettings (0.44.0):
+    - React/Core
+  - React/RCTText (0.44.0):
+    - React/Core
+  - React/RCTVibration (0.44.0):
+    - React/Core
+  - React/RCTWebSocket (0.44.0):
+    - React/Core
+  - Yoga (0.44.0.React)
+
+DEPENDENCIES:
+  - aliyun-oss-rn-sdk (from `../../`)
+  - AliyunOSSiOS (from `/Users/luozhang/workspace/aliyun-oss-ios-sdk`)
+  - react-native-image-picker (from `../node_modules/react-native-image-picker`)
+  - React/Core (from `../node_modules/react-native`)
+  - React/RCTActionSheet (from `../node_modules/react-native`)
+  - React/RCTGeolocation (from `../node_modules/react-native`)
+  - React/RCTImage (from `../node_modules/react-native`)
+  - React/RCTNetwork (from `../node_modules/react-native`)
+  - React/RCTPushNotification (from `../node_modules/react-native`)
+  - React/RCTSettings (from `../node_modules/react-native`)
+  - React/RCTText (from `../node_modules/react-native`)
+  - React/RCTVibration (from `../node_modules/react-native`)
+  - React/RCTWebSocket (from `../node_modules/react-native`)
+  - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
+
+EXTERNAL SOURCES:
+  aliyun-oss-rn-sdk:
+    :path: "../../"
+  AliyunOSSiOS:
+    :path: "/Users/luozhang/workspace/aliyun-oss-ios-sdk"
+  React:
+    :path: "../node_modules/react-native"
+  react-native-image-picker:
+    :path: "../node_modules/react-native-image-picker"
+  Yoga:
+    :path: "../node_modules/react-native/ReactCommon/yoga"
+
+SPEC CHECKSUMS:
+  aliyun-oss-rn-sdk: 7a12b47cb63b83eeac30ae6a7aebdf04433f8cc2
+  AliyunOSSiOS: f70b00b820585d1bf065c5e0e954afe6e1d7f627
+  React: e53535491f7b382b8cd681428dd853159bf25545
+  react-native-image-picker: 42cfe2c8435d893414f8714a81e480313cb1412b
+  Yoga: f2b1f5b59fadb774a3dd9932a7cf813c6e284d71
+
+PODFILE CHECKSUM: 34fdad240231893443ec890535d0df55bfc8dd2f
+
+COCOAPODS: 1.5.0

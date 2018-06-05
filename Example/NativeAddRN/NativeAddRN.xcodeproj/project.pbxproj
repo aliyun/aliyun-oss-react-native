@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C1EF5421E4E0A63001043BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1EF5411E4E0A63001043BD /* main.m */; };
+		6C1EF5451E4E0A63001043BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1EF5441E4E0A63001043BD /* AppDelegate.m */; };
+		6C1EF5481E4E0A63001043BD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1EF5471E4E0A63001043BD /* ViewController.m */; };
+		6C1EF54B1E4E0A63001043BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C1EF5491E4E0A63001043BD /* Main.storyboard */; };
+		6C1EF54D1E4E0A63001043BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C1EF54C1E4E0A63001043BD /* Assets.xcassets */; };
+		6C1EF5501E4E0A63001043BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C1EF54E1E4E0A63001043BD /* LaunchScreen.storyboard */; };
+		6C1EF55B1E4E0A63001043BD /* NativeAddRNTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1EF55A1E4E0A63001043BD /* NativeAddRNTests.m */; };
+		6C1EF5661E4E0A63001043BD /* NativeAddRNUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1EF5651E4E0A63001043BD /* NativeAddRNUITests.m */; };
+		6CA9C1AE1E4E0E5100329955 /* RNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA9C1AD1E4E0E5100329955 /* RNViewController.m */; };
+		A8F6FAAE9BE254803F4C8B23 /* Pods_NativeAddRN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3CA7ED6ECC312778C18AF71 /* Pods_NativeAddRN.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6C1EF5571E4E0A63001043BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C1EF5351E4E0A63001043BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C1EF53C1E4E0A63001043BD;
+			remoteInfo = NativeAddRN;
+		};
+		6C1EF5621E4E0A63001043BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C1EF5351E4E0A63001043BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C1EF53C1E4E0A63001043BD;
+			remoteInfo = NativeAddRN;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D78374656664EF6AED193E8 /* Pods-NativeAddRN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeAddRN.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NativeAddRN/Pods-NativeAddRN.debug.xcconfig"; sourceTree = "<group>"; };
+		597442E2A9557B299EC5D386 /* Pods-NativeAddRN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeAddRN.release.xcconfig"; path = "Pods/Target Support Files/Pods-NativeAddRN/Pods-NativeAddRN.release.xcconfig"; sourceTree = "<group>"; };
+		6C1EF53D1E4E0A63001043BD /* NativeAddRN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NativeAddRN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C1EF5411E4E0A63001043BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6C1EF5431E4E0A63001043BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6C1EF5441E4E0A63001043BD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6C1EF5461E4E0A63001043BD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6C1EF5471E4E0A63001043BD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6C1EF54A1E4E0A63001043BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6C1EF54C1E4E0A63001043BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C1EF54F1E4E0A63001043BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6C1EF5511E4E0A63001043BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C1EF5561E4E0A63001043BD /* NativeAddRNTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NativeAddRNTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C1EF55A1E4E0A63001043BD /* NativeAddRNTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeAddRNTests.m; sourceTree = "<group>"; };
+		6C1EF55C1E4E0A63001043BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C1EF5611E4E0A63001043BD /* NativeAddRNUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NativeAddRNUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C1EF5651E4E0A63001043BD /* NativeAddRNUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeAddRNUITests.m; sourceTree = "<group>"; };
+		6C1EF5671E4E0A63001043BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CA9C1AC1E4E0E5100329955 /* RNViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNViewController.h; sourceTree = "<group>"; };
+		6CA9C1AD1E4E0E5100329955 /* RNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNViewController.m; sourceTree = "<group>"; };
+		E3CA7ED6ECC312778C18AF71 /* Pods_NativeAddRN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NativeAddRN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C1EF53A1E4E0A63001043BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8F6FAAE9BE254803F4C8B23 /* Pods_NativeAddRN.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C1EF5531E4E0A63001043BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C1EF55E1E4E0A63001043BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A3AE60571DCE26F044184D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3CA7ED6ECC312778C18AF71 /* Pods_NativeAddRN.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		51F317CB189F942E82357B40 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D78374656664EF6AED193E8 /* Pods-NativeAddRN.debug.xcconfig */,
+				597442E2A9557B299EC5D386 /* Pods-NativeAddRN.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6C1EF5341E4E0A63001043BD = {
+			isa = PBXGroup;
+			children = (
+				6C1EF53F1E4E0A63001043BD /* NativeAddRN */,
+				6C1EF5591E4E0A63001043BD /* NativeAddRNTests */,
+				6C1EF5641E4E0A63001043BD /* NativeAddRNUITests */,
+				6C1EF53E1E4E0A63001043BD /* Products */,
+				51F317CB189F942E82357B40 /* Pods */,
+				0A3AE60571DCE26F044184D2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6C1EF53E1E4E0A63001043BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C1EF53D1E4E0A63001043BD /* NativeAddRN.app */,
+				6C1EF5561E4E0A63001043BD /* NativeAddRNTests.xctest */,
+				6C1EF5611E4E0A63001043BD /* NativeAddRNUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C1EF53F1E4E0A63001043BD /* NativeAddRN */ = {
+			isa = PBXGroup;
+			children = (
+				6C1EF5431E4E0A63001043BD /* AppDelegate.h */,
+				6C1EF5441E4E0A63001043BD /* AppDelegate.m */,
+				6C1EF5461E4E0A63001043BD /* ViewController.h */,
+				6C1EF5471E4E0A63001043BD /* ViewController.m */,
+				6CA9C1AC1E4E0E5100329955 /* RNViewController.h */,
+				6CA9C1AD1E4E0E5100329955 /* RNViewController.m */,
+				6C1EF5491E4E0A63001043BD /* Main.storyboard */,
+				6C1EF54C1E4E0A63001043BD /* Assets.xcassets */,
+				6C1EF54E1E4E0A63001043BD /* LaunchScreen.storyboard */,
+				6C1EF5511E4E0A63001043BD /* Info.plist */,
+				6C1EF5401E4E0A63001043BD /* Supporting Files */,
+			);
+			path = NativeAddRN;
+			sourceTree = "<group>";
+		};
+		6C1EF5401E4E0A63001043BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C1EF5411E4E0A63001043BD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6C1EF5591E4E0A63001043BD /* NativeAddRNTests */ = {
+			isa = PBXGroup;
+			children = (
+				6C1EF55A1E4E0A63001043BD /* NativeAddRNTests.m */,
+				6C1EF55C1E4E0A63001043BD /* Info.plist */,
+			);
+			path = NativeAddRNTests;
+			sourceTree = "<group>";
+		};
+		6C1EF5641E4E0A63001043BD /* NativeAddRNUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6C1EF5651E4E0A63001043BD /* NativeAddRNUITests.m */,
+				6C1EF5671E4E0A63001043BD /* Info.plist */,
+			);
+			path = NativeAddRNUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6C1EF53C1E4E0A63001043BD /* NativeAddRN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C1EF56A1E4E0A63001043BD /* Build configuration list for PBXNativeTarget "NativeAddRN" */;
+			buildPhases = (
+				0BE6561930234B670B30A54E /* [CP] Check Pods Manifest.lock */,
+				6C1EF5391E4E0A63001043BD /* Sources */,
+				6C1EF53A1E4E0A63001043BD /* Frameworks */,
+				6C1EF53B1E4E0A63001043BD /* Resources */,
+				1B3871E456F489067BF886EE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NativeAddRN;
+			productName = NativeAddRN;
+			productReference = 6C1EF53D1E4E0A63001043BD /* NativeAddRN.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6C1EF5551E4E0A63001043BD /* NativeAddRNTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C1EF56D1E4E0A63001043BD /* Build configuration list for PBXNativeTarget "NativeAddRNTests" */;
+			buildPhases = (
+				6C1EF5521E4E0A63001043BD /* Sources */,
+				6C1EF5531E4E0A63001043BD /* Frameworks */,
+				6C1EF5541E4E0A63001043BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C1EF5581E4E0A63001043BD /* PBXTargetDependency */,
+			);
+			name = NativeAddRNTests;
+			productName = NativeAddRNTests;
+			productReference = 6C1EF5561E4E0A63001043BD /* NativeAddRNTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6C1EF5601E4E0A63001043BD /* NativeAddRNUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C1EF5701E4E0A63001043BD /* Build configuration list for PBXNativeTarget "NativeAddRNUITests" */;
+			buildPhases = (
+				6C1EF55D1E4E0A63001043BD /* Sources */,
+				6C1EF55E1E4E0A63001043BD /* Frameworks */,
+				6C1EF55F1E4E0A63001043BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C1EF5631E4E0A63001043BD /* PBXTargetDependency */,
+			);
+			name = NativeAddRNUITests;
+			productName = NativeAddRNUITests;
+			productReference = 6C1EF5611E4E0A63001043BD /* NativeAddRNUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C1EF5351E4E0A63001043BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = 9elephas;
+				TargetAttributes = {
+					6C1EF53C1E4E0A63001043BD = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = U4629HP3VA;
+						ProvisioningStyle = Automatic;
+					};
+					6C1EF5551E4E0A63001043BD = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = U4629HP3VA;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6C1EF53C1E4E0A63001043BD;
+					};
+					6C1EF5601E4E0A63001043BD = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = U4629HP3VA;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6C1EF53C1E4E0A63001043BD;
+					};
+				};
+			};
+			buildConfigurationList = 6C1EF5381E4E0A63001043BD /* Build configuration list for PBXProject "NativeAddRN" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6C1EF5341E4E0A63001043BD;
+			productRefGroup = 6C1EF53E1E4E0A63001043BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C1EF53C1E4E0A63001043BD /* NativeAddRN */,
+				6C1EF5551E4E0A63001043BD /* NativeAddRNTests */,
+				6C1EF5601E4E0A63001043BD /* NativeAddRNUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C1EF53B1E4E0A63001043BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C1EF5501E4E0A63001043BD /* LaunchScreen.storyboard in Resources */,
+				6C1EF54D1E4E0A63001043BD /* Assets.xcassets in Resources */,
+				6C1EF54B1E4E0A63001043BD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C1EF5541E4E0A63001043BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C1EF55F1E4E0A63001043BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BE6561930234B670B30A54E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NativeAddRN-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1B3871E456F489067BF886EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NativeAddRN/Pods-NativeAddRN-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AliyunOSSiOS/AliyunOSSiOS.framework",
+				"${BUILT_PRODUCTS_DIR}/React/React.framework",
+				"${BUILT_PRODUCTS_DIR}/Yoga/yoga.framework",
+				"${BUILT_PRODUCTS_DIR}/aliyun-oss-rn-sdk/aliyun_oss_rn_sdk.framework",
+				"${BUILT_PRODUCTS_DIR}/react-native-image-picker/react_native_image_picker.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AliyunOSSiOS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/aliyun_oss_rn_sdk.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/react_native_image_picker.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NativeAddRN/Pods-NativeAddRN-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C1EF5391E4E0A63001043BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CA9C1AE1E4E0E5100329955 /* RNViewController.m in Sources */,
+				6C1EF5481E4E0A63001043BD /* ViewController.m in Sources */,
+				6C1EF5451E4E0A63001043BD /* AppDelegate.m in Sources */,
+				6C1EF5421E4E0A63001043BD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C1EF5521E4E0A63001043BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C1EF55B1E4E0A63001043BD /* NativeAddRNTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C1EF55D1E4E0A63001043BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C1EF5661E4E0A63001043BD /* NativeAddRNUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6C1EF5581E4E0A63001043BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C1EF53C1E4E0A63001043BD /* NativeAddRN */;
+			targetProxy = 6C1EF5571E4E0A63001043BD /* PBXContainerItemProxy */;
+		};
+		6C1EF5631E4E0A63001043BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C1EF53C1E4E0A63001043BD /* NativeAddRN */;
+			targetProxy = 6C1EF5621E4E0A63001043BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6C1EF5491E4E0A63001043BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C1EF54A1E4E0A63001043BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6C1EF54E1E4E0A63001043BD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C1EF54F1E4E0A63001043BD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6C1EF5681E4E0A63001043BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6C1EF5691E4E0A63001043BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6C1EF56B1E4E0A63001043BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D78374656664EF6AED193E8 /* Pods-NativeAddRN.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U4629HP3VA;
+				INFOPLIST_FILE = NativeAddRN/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.9elephas.NativeAddRN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6C1EF56C1E4E0A63001043BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 597442E2A9557B299EC5D386 /* Pods-NativeAddRN.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U4629HP3VA;
+				INFOPLIST_FILE = NativeAddRN/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.9elephas.NativeAddRN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6C1EF56E1E4E0A63001043BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = U4629HP3VA;
+				INFOPLIST_FILE = NativeAddRNTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.9elephas.NativeAddRNTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NativeAddRN.app/NativeAddRN";
+			};
+			name = Debug;
+		};
+		6C1EF56F1E4E0A63001043BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = U4629HP3VA;
+				INFOPLIST_FILE = NativeAddRNTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.9elephas.NativeAddRNTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NativeAddRN.app/NativeAddRN";
+			};
+			name = Release;
+		};
+		6C1EF5711E4E0A63001043BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = U4629HP3VA;
+				INFOPLIST_FILE = NativeAddRNUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.9elephas.NativeAddRNUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NativeAddRN;
+			};
+			name = Debug;
+		};
+		6C1EF5721E4E0A63001043BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = U4629HP3VA;
+				INFOPLIST_FILE = NativeAddRNUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.9elephas.NativeAddRNUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NativeAddRN;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C1EF5381E4E0A63001043BD /* Build configuration list for PBXProject "NativeAddRN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C1EF5681E4E0A63001043BD /* Debug */,
+				6C1EF5691E4E0A63001043BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C1EF56A1E4E0A63001043BD /* Build configuration list for PBXNativeTarget "NativeAddRN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C1EF56B1E4E0A63001043BD /* Debug */,
+				6C1EF56C1E4E0A63001043BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C1EF56D1E4E0A63001043BD /* Build configuration list for PBXNativeTarget "NativeAddRNTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C1EF56E1E4E0A63001043BD /* Debug */,
+				6C1EF56F1E4E0A63001043BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C1EF5701E4E0A63001043BD /* Build configuration list for PBXNativeTarget "NativeAddRNUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C1EF5711E4E0A63001043BD /* Debug */,
+				6C1EF5721E4E0A63001043BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6C1EF5351E4E0A63001043BD /* Project object */;
+}

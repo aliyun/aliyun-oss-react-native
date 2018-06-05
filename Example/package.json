@@ -1,0 +1,24 @@
+{
+  "name": "Example",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "aliyun-oss-rn-sdk": "0.0.9-beta.2",
+    "react": "16.0.0-alpha.6",
+    "react-native": "0.44.0",
+    "react-native-image-picker": "^0.26.7"
+  },
+  "devDependencies": {
+    "babel-jest": "22.4.3",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "22.4.3",
+    "react-test-renderer": "16.0.0-alpha.6"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

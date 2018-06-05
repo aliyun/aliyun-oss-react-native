@@ -1,0 +1,6 @@
+android/build/
+android/aliyun-oss-rn-sdk.iml
+node_modules/
+.idea
+.DS_Store
+Example/NativeAddRN/Pods/
