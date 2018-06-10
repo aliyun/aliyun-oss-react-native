@@ -7,16 +7,16 @@
     "test": "jest"
   },
   "dependencies": {
-    "aliyun-oss-rn-sdk": "0.0.9-beta.2",
+    "aliyun-oss-react-native": "0.0.1-alpha.1",
     "react": "16.0.0-alpha.6",
-    "react-native": "0.44.0",
-    "react-native-image-picker": "^0.26.7"
+    "react-native": "0.44.3",
+    "react-native-image-picker": "^0.26.10"
   },
   "devDependencies": {
-    "babel-jest": "22.4.3",
+    "babel-jest": "23.0.1",
     "babel-preset-react-native": "4.0.0",
-    "jest": "22.4.3",
-    "react-test-renderer": "16.0.0-alpha.6"
+    "jest": "23.1.0",
+    "react-test-renderer": "16.3.1"
   },
   "jest": {
     "preset": "react-native"

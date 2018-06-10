@@ -13,7 +13,7 @@ import { ImageProcessManager } from './Component/ImageProcessManager'
 import { BucketManager } from './Component/BucketManager'
 import { ObjectManager } from './Component/ObjectManager'
 
-import AliyunOSS from 'aliyun-oss-rn-sdk'
+import AliyunOSS from 'aliyun-oss-react-native'
 //open log 
 AliyunOSS.enableDevMode()
 // defalut configraiton
