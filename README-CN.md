@@ -33,18 +33,18 @@
 
 ## 安装
 
-注意: react-native版本建议0.44.0及以上，建议使用fackebook官方[react-native-cli](https://www.npmjs.com/package/react-native-cli)或者[create-react-native-app](https://www.npmjs.com/package/create-react-native-app)脚手架进行react native项目构建。aliyun-oss-rn-sdk可通过npm或者yarn安装
+注意: react-native版本建议0.44.0及以上，建议使用fackebook官方[react-native-cli](https://www.npmjs.com/package/react-native-cli)或者[create-react-native-app](https://www.npmjs.com/package/create-react-native-app)脚手架进行react native项目构建。aliyun-oss-react-native可通过npm或者yarn安装
 
 * npm
 
 ```script
-npm install aliyun-oss-rn-sdk  --save
+npm install aliyun-oss-react-native  --save
 ```
 
 * yarn
 
 ```script
-yarn install aliyun-oss-rn-sdk --save
+yarn install aliyun-oss-react-native --save
 ```
 ### 自动安装
 
@@ -67,25 +67,25 @@ react-native link
 
 - **CocoaPods**
 ```
-pod 'aliyun-oss-rn-sdk', :path => '../node_modules/aliyun-oss-rn-sdk'
+pod 'aliyun-oss-react-native', :path => '../node_modules/aliyun-oss-react-native'
 ````
 
 - **非CocoaPods**
 
-1. 在XCode  Project navigator面板中, 右键单击工程Libraries文件 ➜ 选择`Add Files to <...>` 进入 `node_modules` ➜ `aliyun-oss-rn-sdk` ➜ `ios` ➜ select `RNAliyunOSS.xcodeproj`
+1. 在XCode  Project navigator面板中, 右键单击工程Libraries文件 ➜ 选择`Add Files to <...>` 进入 `node_modules` ➜ `aliyun-oss-react-native` ➜ `ios` ➜ select `RNAliyunOSS.xcodeproj`
 2. 在XCode  Project navigator面板中, 添加`RNAliyunOSS.a` to `Build Phases -> Link Binary With Libraries`
 3. 在XCode  Project navigator面板中，右键单击[framework] ➜ Add Files to [your project's name]. 进入node_modules ➜ aliyun-oss-rn-sdk ➜ AliyunSDK. Add AliyunOSSiOS.framework
 
 #### Android
 1. `settings.gradle`
     ```gradle
-    include ':aliyun-oss-rn-sdk'
-    project(':aliyun-oss-rn-sdk').projectDir = new File(rootProject.projectDir, '../node_modules/aliyun-oss-rn-sdk/android')
+    include ':aliyun-oss-react-native'
+    project(':aliyun-oss-react-native').projectDir = new File(rootProject.projectDir, '../node_modules/aliyun-oss-react-native/android')
     ```
 2. `build.gradle`
     ```gradle
     dependencies {
-        compile project(':aliyun-oss-rn-sdk')
+        compile project(':aliyun-oss-react-native')
     }
     ```
 
@@ -111,7 +111,7 @@ pod 'aliyun-oss-rn-sdk', :path => '../node_modules/aliyun-oss-rn-sdk'
 
 * step-1:导入AliyunOSS
 ```
-import AliyunOSS from 'aliyun-oss-rn-sdk'
+import AliyunOSS from 'aliyun-oss-react-native'
 ```
 * step-2:开启调试模式 (可选)
 
@@ -381,7 +381,7 @@ AliyunOSS.asyncListBuckets().then((e) => {
 * step-1:克隆项目并安装依赖包
 
 ```
-1. git clone http://gitlab.alibaba-inc.com/oss/aliyun-oss-rn-sdk.git
+1. git clone https://github.com/aliyun/aliyun-oss-react-native.git
 2. cd Example
 3. npm install
 ```
