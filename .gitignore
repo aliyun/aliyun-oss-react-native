@@ -1,6 +1,8 @@
 android/build/
-android/aliyun-oss-rn-sdk.iml
+android/aliyun-oss-react-native.iml
 node_modules/
 .idea
 .DS_Store
-Example/NativeAddRN/Pods/
+Example/ios/Pods/
+package-lock.json
+

@@ -1,6 +1,6 @@
 {
   "name": "aliyun-oss-react-native",
-  "version": "0.0.1-alpha.1",
+  "version": "1.0.0-alpha.1",
   "description": "React Native SDK for aliyun object storage service",
   "main": "index.js",
   "scripts": {

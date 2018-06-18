@@ -1,7 +1,7 @@
 {
-  "AccessKeyId" : "XXXXXXXXXXXXXXXX",
-  "AccessKeySecret" : "XXXXXXXXXXXXXXXX",
-  "RoleArn" : "XXXXXXXXXXXXXXXX",
+  "AccessKeyId" : "",
+  "AccessKeySecret" : "",
+  "RoleArn" : "",
   "TokenExpireTime" : "3600",
   "PolicyFile": "policy/all_policy.txt"
 }
