@@ -1,6 +1,6 @@
 # Aliyun OSS SDK for React Native
 
-## [README of English](#https://github.com/aliyun/aliyun-oss-react-native/blob/develop/README.md)
+## [README of English](https://github.com/aliyun/aliyun-oss-react-native/blob/develop/README.md)
 
 ## 简介
 

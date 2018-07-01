@@ -1,6 +1,6 @@
 # Alibaba Cloud OSS SDK for React Native
 
-## [README of Chinese](#https://github.com/aliyun/aliyun-oss-react-native/blob/develop/README-CN.md)
+## [README of Chinese](https://github.com/aliyun/aliyun-oss-react-native/blob/develop/README-CN.md)
 
 ## Introduction
 
