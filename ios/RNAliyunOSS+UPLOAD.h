@@ -5,7 +5,7 @@
 //  Created by 罗章 on 2018/5/8.
 //
 
-#import <RNAliyunOSS.h>
+#import "RNAliyunOSS.h"
 
 @interface RNAliyunOSS (UPLOAD)
 

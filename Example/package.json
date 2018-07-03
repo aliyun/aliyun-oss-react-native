@@ -9,7 +9,7 @@
   "dependencies": {
     "react": "16.3.1",
     "react-native": "0.55.4",
-    "aliyun-oss-react-native": "^1.0.0-alpha.2",
+    "aliyun-oss-react-native": "^1.0.0-alpha.3",
     "react-native-image-picker": "^0.26.10"
   },
   "devDependencies": {
