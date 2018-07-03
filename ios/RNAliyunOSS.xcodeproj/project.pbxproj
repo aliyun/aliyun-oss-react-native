@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1842ED021EEBA70B004D40E3 /* RNAliyunOSS.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842ED011EEBA70B004D40E3 /* RNAliyunOSS.m */; };
+		3E200E7C20EB5DA5002AF220 /* RNAliyunOSS+UPLOAD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E200E6F20EB5DA5002AF220 /* RNAliyunOSS+UPLOAD.m */; };
+		3E200E7D20EB5DA5002AF220 /* RNAliyunOSS+BUCKET.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E200E7320EB5DA5002AF220 /* RNAliyunOSS+BUCKET.m */; };
+		3E200E7E20EB5DA5002AF220 /* RNAliyunOSS+OBJECT.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E200E7420EB5DA5002AF220 /* RNAliyunOSS+OBJECT.m */; };
+		3E200E7F20EB5DA5002AF220 /* RNAliyunOSS+MULTIPARTUPLOAD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E200E7720EB5DA5002AF220 /* RNAliyunOSS+MULTIPARTUPLOAD.m */; };
+		3E200E8020EB5DA5002AF220 /* RNAliyunOSS+DOWNLOAD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E200E7920EB5DA5002AF220 /* RNAliyunOSS+DOWNLOAD.m */; };
+		3E200E8120EB5DA5002AF220 /* RNAliyunOSS+AUTH.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E200E7A20EB5DA5002AF220 /* RNAliyunOSS+AUTH.m */; };
+		3E200E8220EB5DA5002AF220 /* RNAliyunOSS+LOG.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E200E7B20EB5DA5002AF220 /* RNAliyunOSS+LOG.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +34,20 @@
 		1842ED001EEBA70B004D40E3 /* RNAliyunOSS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNAliyunOSS.h; sourceTree = "<group>"; };
 		1842ED011EEBA70B004D40E3 /* RNAliyunOSS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNAliyunOSS.m; sourceTree = "<group>"; };
 		186899B21F31997000841D5D /* AliyunOSSiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AliyunOSSiOS.framework; path = AliyunSDK/AliyunOSSiOS.framework; sourceTree = "<group>"; };
+		3E200E6E20EB5DA5002AF220 /* RNAliyunOSS+BUCKET.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNAliyunOSS+BUCKET.h"; sourceTree = "<group>"; };
+		3E200E6F20EB5DA5002AF220 /* RNAliyunOSS+UPLOAD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RNAliyunOSS+UPLOAD.m"; sourceTree = "<group>"; };
+		3E200E7020EB5DA5002AF220 /* RNAliyunOSS+AUTH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNAliyunOSS+AUTH.h"; sourceTree = "<group>"; };
+		3E200E7120EB5DA5002AF220 /* RNAliyunOSS+DOWNLOAD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNAliyunOSS+DOWNLOAD.h"; sourceTree = "<group>"; };
+		3E200E7220EB5DA5002AF220 /* RNAliyunOSS+LOG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNAliyunOSS+LOG.h"; sourceTree = "<group>"; };
+		3E200E7320EB5DA5002AF220 /* RNAliyunOSS+BUCKET.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RNAliyunOSS+BUCKET.m"; sourceTree = "<group>"; };
+		3E200E7420EB5DA5002AF220 /* RNAliyunOSS+OBJECT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RNAliyunOSS+OBJECT.m"; sourceTree = "<group>"; };
+		3E200E7520EB5DA5002AF220 /* RNAliyunOSS+OBJECT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNAliyunOSS+OBJECT.h"; sourceTree = "<group>"; };
+		3E200E7620EB5DA5002AF220 /* RNAliyunOSS+MULTIPARTUPLOAD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNAliyunOSS+MULTIPARTUPLOAD.h"; sourceTree = "<group>"; };
+		3E200E7720EB5DA5002AF220 /* RNAliyunOSS+MULTIPARTUPLOAD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RNAliyunOSS+MULTIPARTUPLOAD.m"; sourceTree = "<group>"; };
+		3E200E7820EB5DA5002AF220 /* RNAliyunOSS+UPLOAD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNAliyunOSS+UPLOAD.h"; sourceTree = "<group>"; };
+		3E200E7920EB5DA5002AF220 /* RNAliyunOSS+DOWNLOAD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RNAliyunOSS+DOWNLOAD.m"; sourceTree = "<group>"; };
+		3E200E7A20EB5DA5002AF220 /* RNAliyunOSS+AUTH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RNAliyunOSS+AUTH.m"; sourceTree = "<group>"; };
+		3E200E7B20EB5DA5002AF220 /* RNAliyunOSS+LOG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RNAliyunOSS+LOG.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +80,20 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				3E200E7020EB5DA5002AF220 /* RNAliyunOSS+AUTH.h */,
+				3E200E7A20EB5DA5002AF220 /* RNAliyunOSS+AUTH.m */,
+				3E200E6E20EB5DA5002AF220 /* RNAliyunOSS+BUCKET.h */,
+				3E200E7320EB5DA5002AF220 /* RNAliyunOSS+BUCKET.m */,
+				3E200E7120EB5DA5002AF220 /* RNAliyunOSS+DOWNLOAD.h */,
+				3E200E7920EB5DA5002AF220 /* RNAliyunOSS+DOWNLOAD.m */,
+				3E200E7220EB5DA5002AF220 /* RNAliyunOSS+LOG.h */,
+				3E200E7B20EB5DA5002AF220 /* RNAliyunOSS+LOG.m */,
+				3E200E7620EB5DA5002AF220 /* RNAliyunOSS+MULTIPARTUPLOAD.h */,
+				3E200E7720EB5DA5002AF220 /* RNAliyunOSS+MULTIPARTUPLOAD.m */,
+				3E200E7520EB5DA5002AF220 /* RNAliyunOSS+OBJECT.h */,
+				3E200E7420EB5DA5002AF220 /* RNAliyunOSS+OBJECT.m */,
+				3E200E7820EB5DA5002AF220 /* RNAliyunOSS+UPLOAD.h */,
+				3E200E6F20EB5DA5002AF220 /* RNAliyunOSS+UPLOAD.m */,
 				186899B11F31993900841D5D /* AliyunSDK */,
 				1842ED001EEBA70B004D40E3 /* RNAliyunOSS.h */,
 				1842ED011EEBA70B004D40E3 /* RNAliyunOSS.m */,
@@ -122,7 +157,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E200E8220EB5DA5002AF220 /* RNAliyunOSS+LOG.m in Sources */,
+				3E200E7E20EB5DA5002AF220 /* RNAliyunOSS+OBJECT.m in Sources */,
+				3E200E8120EB5DA5002AF220 /* RNAliyunOSS+AUTH.m in Sources */,
+				3E200E7C20EB5DA5002AF220 /* RNAliyunOSS+UPLOAD.m in Sources */,
+				3E200E7D20EB5DA5002AF220 /* RNAliyunOSS+BUCKET.m in Sources */,
+				3E200E7F20EB5DA5002AF220 /* RNAliyunOSS+MULTIPARTUPLOAD.m in Sources */,
 				1842ED021EEBA70B004D40E3 /* RNAliyunOSS.m in Sources */,
+				3E200E8020EB5DA5002AF220 /* RNAliyunOSS+DOWNLOAD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
