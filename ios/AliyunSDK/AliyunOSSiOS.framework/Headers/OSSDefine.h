@@ -11,17 +11,27 @@
 #ifndef OSSDefine_h
 #define OSSDefine_h
 
+#if TARGET_OS_IOS
 #define OSSUAPrefix                             @"aliyun-sdk-ios"
-#define OSSSDKVersion                           @"2.6.1"
+#elif TARGET_OS_OSX
+#define OSSUAPrefix                             @"aliyun-sdk-mac"
+#endif
+#define OSSSDKVersion                           @"2.10.4"
 
 #define OSSListBucketResultXMLTOKEN             @"ListBucketResult"
 #define OSSNameXMLTOKEN                         @"Name"
 #define OSSDelimiterXMLTOKEN                    @"Delimiter"
 #define OSSMarkerXMLTOKEN                       @"Marker"
+#define OSSKeyMarkerXMLTOKEN                    @"KeyMarker"
 #define OSSNextMarkerXMLTOKEN                   @"NextMarker"
+#define OSSNextKeyMarkerXMLTOKEN                @"NextKeyMarker"
+#define OSSUploadIdMarkerXMLTOKEN               @"UploadIdMarker"
+#define OSSNextUploadIdMarkerXMLTOKEN           @"NextUploadIdMarker"
 #define OSSMaxKeysXMLTOKEN                      @"MaxKeys"
+#define OSSMaxUploadsXMLTOKEN                   @"MaxUploads"
 #define OSSIsTruncatedXMLTOKEN                  @"IsTruncated"
 #define OSSContentsXMLTOKEN                     @"Contents"
+#define OSSUploadXMLTOKEN                       @"Upload"
 #define OSSKeyXMLTOKEN                          @"Key"
 #define OSSLastModifiedXMLTOKEN                 @"LastModified"
 #define OSSETagXMLTOKEN                         @"ETag"
@@ -58,6 +68,7 @@
 #define OSSHttpHeaderContentMD5                 @"Content-MD5"
 #define OSSHttpHeaderCacheControl               @"Cache-Control"
 #define OSSHttpHeaderExpires                    @"Expires"
+#define OSSHttpHeaderHashSHA1                   @"x-oss-hash-sha1"
 
 #define OSSDefaultRetryCount                    3
 #define OSSDefaultMaxConcurrentNum              5
