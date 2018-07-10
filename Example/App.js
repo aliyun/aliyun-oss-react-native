@@ -14,24 +14,22 @@ import { BucketManager } from './Component/BucketManager'
 import { ObjectManager } from './Component/ObjectManager'
 
 import AliyunOSS from 'aliyun-oss-react-native'
+
 //open log 
 AliyunOSS.enableDevMode()
+
 // defalut configraiton
 const configuration = {
    maxRetryCount: 3,  
    timeoutIntervalForRequest: 30,
    timeoutIntervalForResource: 24 * 60 * 60
 };
-const config = {
-  AccessKey: 'XXX',
-  SecretKey: 'XXX',
-};
-const endPoint = 'oss-cn-zhangjiakou.aliyuncs.com';
-const companyserver = "http://XXX:PORT";
-const familyserver = "http://XXX:PORT";
 
-// AliyunOSS.initWithPlainTextAccessKey(config.AccessKey, config.SecretKey, endPoint, configuration);
-AliyunOSS.initWithServerSTS(familyserver,endPoint, configuration)
+const endPoint = 'oss-cn-XXX.aliyuncs.com';
+const authserver = "http://XXX:PORT";
+
+// initWithServerSTS to auth
+AliyunOSS.initWithServerSTS(authserver,endPoint, configuration)
 
 type Props = {};
 
