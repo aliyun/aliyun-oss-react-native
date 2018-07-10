@@ -139,21 +139,21 @@ AliyunOSS.initWithServerSTS("/***http://ip:端口/****/",endPoint, configuration
 
 1. `npm istall`
 2. 修改config中accessKeyId 和 accessKeySecret
-3. node index.js,端口默认9000，鉴权服务地址为:(http|https)://ip.com:9000/
+3. node index.js,端口默认9000，鉴权服务地址为:(http|https)://ip:9000/
 
 *  step-5:
 
 ```javascript
-    <!-- 备注：目前接口仅暴漏filePath,上传路径为file:/// -->
-    AliyunOSS.asyncUpload(bucketname, objectkey, filePath).then( (res) => {
-        <!-- log的查看可以通过React Native自带的调试工具也可通过XCode Log控制台进行查看 -->
-        console.log(res)
-    }).catch((error)=>{
-        console.log(error)
-    })
-    <!-- 监听上传事件和上传进度-->
-   const downloadProgress = p => console.log(p.currentSize / p.totalSize);
-   AliyunOSS.addEventListener('uploadProgress', downloadProgress);
+  <!-- 备注：目前接口仅暴漏filePath,上传路径为file:/// -->
+  AliyunOSS.asyncUpload(bucketname, objectkey, filePath).then( (res) => {
+    <!-- log的查看可以通过React Native自带的调试工具也可通过XCode Log控制台进行查看 -->
+    console.log(res)
+  }).catch((error)=>{
+    console.log(error)
+  })
+  <!-- 监听上传事件和上传进度-->
+ const downloadProgress = p => console.log(p.currentSize / p.totalSize);
+ AliyunOSS.addEventListener('uploadProgress', downloadProgress);
 ```
 
 ## 接口
@@ -167,9 +167,7 @@ initWithPlainTextAccessKey | 支持| 支持
 initWithSigner | 支持| 支持
 initWithSecurityToken | 支持| 支持
 initWithServerSTS  | 支持| 支持
-asyncUpload  | 支持| 支持
-asyncAppendObject  ||
-asyncResumableUpload  ||
+asyncUpload  | 支持| 支持 |
 initMultipartUpload  | 支持| 支持
 multipartUpload   | 支持| 支持
 listParts   | 支持| 支持
@@ -376,7 +374,7 @@ AliyunOSS.asyncListBuckets().then((e) => {
 
 ## 示例
 
-仓库Example中提供了React Native android和iOS端运行demo，Android为Example下的android工程，iOS为Example下的NativeAddRN工程，目前Example提供了所有已开发的API DEMO，还在完善中，欢迎参与共建。如何运行Example呢？
+仓库Example中提供了React Native android和iOS端运行demo，Android为Example下的android工程，iOS为Example下的iOS工程，目前Example提供了所有已开发的API DEMO，还在完善中，欢迎参与共建。如何运行Example呢？
 
 * step-1:克隆项目并安装依赖包
 
