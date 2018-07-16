@@ -71,38 +71,39 @@ pod 'aliyun-oss-react-native', :path => '../node_modules/aliyun-oss-react-native
 
 #### Android
 1. Add the following lines to `android/settings.gradle`:
-    ```gradle
-    include ':react-native-rn-sdk'
-    project(':react-native-rn-sdk').projectDir = new File(rootProject.projectDir, '../node_modules/aliyun-oss-rn-sdk/android')
-    ```
+
+```gradle
+include ':react-native-rn-sdk'
+project(':react-native-rn-sdk').projectDir = new File(rootProject.projectDir, '../node_modules/aliyun-oss-rn-sdk/android')
+```
 
 2. Add the compile line to the dependencies in `android/app/build.gradle`:
-    ```gradle
-    dependencies {
-        compile project(':aliyun-oss-react-native')
-    }
-    ```
-
+```gradle
+dependencies {
+  compile project(':aliyun-oss-react-native')
+}
+```
 3. Add the required permissions in `AndroidManifest.xml`:
-    ```xml
-       <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
-       <uses-permission android:name="android.permission.CAMERA" />
-    ```
+
+  ```xml
+     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+     <uses-permission android:name="android.permission.CAMERA" />
+  ```
 4. Add the import and link the package in `MainApplication.java`:
 
-    ```java
-      import com.reactlibrary.RNAliyunOssPackage;
+```java
+import com.reactlibrary.RNAliyunOssPackage;
 
-       public class MainApplication extends Application implements ReactApplication {
-        @Override
-          protected List<ReactPackage> getPackages() {
-            return Arrays.<ReactPackage>asList(
-                new MainReactPackage(),
-                  new RNAliyunOssPackage()
-            );
-          }
-       }
-      ```
+ public class MainApplication extends Application implements ReactApplication {
+  @Override
+    protected List<ReactPackage> getPackages() {
+      return Arrays.<ReactPackage>asList(
+        new MainReactPackage(),
+        new RNAliyunOssPackage()
+    );
+  }
+}
+```
 
 ## Usage
 
@@ -170,8 +171,6 @@ initWithSigner  |Y|Y
 initWithSecurityToken   |Y|Y
 initWithServerSTS   |Y|Y
 asyncUpload   |Y| Y
-asyncAppendObject  ||
-asyncResumableUpload  ||
 initMultipartUpload |Y|Y
 multipartUpload  | Y | Y
 listParts |Y|Y
@@ -347,29 +346,29 @@ AliyunOSS.asyncListBuckets().then((e) => {
 ```
 ### doesObjectExist
 
-```
- AliyunOSS.doesObjectExist('luozhang001','xx.png').then((e)=>{
+```javascript
+ AliyunOSS.doesObjectExist('luozhang001','xx.png').then( (e) => {
     console.log(e)
-  }).catch((e)=>{
-     console.log(e)
+  }).catch((e) => {
+    console.log(e)
   })
 ```
 
 ### asyncCopyObject
 
-```
- AliyunOSS.asyncCopyObject('luozhang001',"2.png","luozhang002","sbsbsb").then((e)=>{
-      console.log(e)
-    }).catch((e)=>{
-      console.log("xxxx")
-      console.log(e)
-    })
+```javascript
+ AliyunOSS.asyncCopyObject('luozhang001',"2.png","luozhang002","sbsbsb").then( (e) => {
+    console.log(e)
+  }).catch((e)=>{
+    console.log("xxxx")
+    console.log(e)
+  })
 ```
 ### asyncDeleteObject
 
-```
+```javascript
  AliyunOSS.asyncDeleteObject('luozhang001','2.png').then((e)=>{
-     Alert.alert(e)
+    Alert.alert(e)
   }).catch((e)=>{
     console.log(e)
   })
@@ -377,7 +376,7 @@ AliyunOSS.asyncListBuckets().then((e) => {
 
 ## DEMO
 
-In the repository, we prodive RN SDK DEMO in the Example folder including andriod and ios,`Example/android` provide the android demo;`Example/NativeAddRN` provide the ios demo.Welcome to join us, how to run the Example ?
+In the repository, we prodive RN SDK DEMO in the Example folder including andriod and ios,`Example/android` provide the android demo;`Example/iOS` provide the ios demo.Welcome to join us, how to run the Example ?
 
 * step-1:clone the project and install some dependencies
 

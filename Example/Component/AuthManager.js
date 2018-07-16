@@ -12,9 +12,9 @@ import {
 
 
 const configuration = {
-   maxRetryCount: 3,  
-   timeoutIntervalForRequest: 30,
-   timeoutIntervalForResource: 24 * 60 * 60
+  maxRetryCount: 3,  
+  timeoutIntervalForRequest: 30,
+  timeoutIntervalForResource: 24 * 60 * 60
 };
 
 const config = {
