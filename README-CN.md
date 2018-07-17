@@ -191,9 +191,9 @@ asyncDeleteObject | 支持| 支持
 AliyunOSS.enableDevMode()
 ```
 
-### initWithPlainTextAccessKey
+### initWithPlainTextAccessKey(不建议)
 
-该接口需要通过明文授权acckeyId和accekeySecret，使用可查看
+该接口需要通过明文授权acckeyId和accekeySecret，开发者这可以使用，但是我们不建议
 
 ```javascript
 const endPoint = "XXX"
