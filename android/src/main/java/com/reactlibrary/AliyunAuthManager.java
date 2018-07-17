@@ -10,6 +10,7 @@ import com.alibaba.sdk.android.oss.common.OSSConstants;
 import com.alibaba.sdk.android.oss.common.auth.OSSCredentialProvider;
 import com.alibaba.sdk.android.oss.common.auth.OSSCustomSignerCredentialProvider;
 import com.alibaba.sdk.android.oss.common.auth.OSSFederationCredentialProvider;
+import com.alibaba.sdk.android.oss.common.auth.OSSPlainTextAKSKCredentialProvider;
 import com.alibaba.sdk.android.oss.common.auth.OSSFederationToken;
 import com.alibaba.sdk.android.oss.common.auth.OSSStsTokenCredentialProvider;
 import com.alibaba.sdk.android.oss.common.utils.IOUtils;
@@ -83,27 +84,8 @@ public class AliyunAuthManager {
                                            String accessKeySecret,
                                            String endPoint,
                                            ReadableMap configuration) {
-        OSSCredentialProvider credentialProvider = new OSSFederationCredentialProvider() {
-            @Override
-            public OSSFederationToken getFederationToken() {
-                try {
-                    URL stsUrl = new URL("http://yourip:port");
-                    HttpURLConnection conn = (HttpURLConnection) stsUrl.openConnection();
-                    InputStream input = conn.getInputStream();
-                    String jsonText = IOUtils.readStreamAsString(input, OSSConstants.DEFAULT_CHARSET_NAME);
-                    JSONObject jsonObjs = new JSONObject(jsonText);
-                    String ak = jsonObjs.getString("AccessKeyId");
-                    String sk = jsonObjs.getString("AccessKeySecret");
-                    String token = jsonObjs.getString("SecurityToken");
-                    String expiration = jsonObjs.getString("Expiration");
-                    return new OSSFederationToken(ak, sk, token, expiration);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-                return null;
-            }
-        };
 
+        OSSCredentialProvider credentialProvider = new OSSPlainTextAKSKCredentialProvider(accessKeyId,accessKeySecret);
         // init conf
         ClientConfiguration conf = ConfigUtils.initAuthConfig(configuration);
 

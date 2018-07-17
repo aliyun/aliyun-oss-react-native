@@ -197,7 +197,7 @@ AliyunOSS.enableDevMode()
 
 ### initWithPlainTextAccessKey
 
-init auth client with accessKeyId and accessKeySecret,please refer to the code.
+init auth client with accessKeyId and accessKeySecret,please refer to the code.you can use ,but we do not suggest use it。
 
 ```javascript
 const endPoint = "XXX"
