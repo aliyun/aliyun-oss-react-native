@@ -50,7 +50,14 @@ yarn install aliyun-oss-react-native --save
 run `react-native link` in the react native project
 
 ```
-react-native link
+react-native link aliyun-oss-react-native
+```
+
+`Note`：for suppport IPv6-Only networkd，you need to require :
+```javascript
+1. libresolv.tbd
+2. CoreTelephony.framework
+3. SystemConfiguration.framework
 ```
 
 ### Manual Installation
@@ -66,15 +73,15 @@ pod 'aliyun-oss-react-native', :path => '../node_modules/aliyun-oss-react-native
 - **no CocoaPods**
 
 1. In the XCode's "Project navigator", right click on your project's Libraries folder ➜ `Add Files to <...>` Go to `node_modules` ➜ `aliyun-oss-react-native` ➜ `ios` ➜ select `RNAliyunOSS.xcodeproj`
-2. Add `RNAliyun.a` to `Build Phases -> Link Binary With Libraries`
+2. Add `libRNAliyunOSS.a` to `Build Phases -> Link Binary With Libraries`
 3. In XCode, in the project navigator, right click `Frameworks` ➜ `Add Files to [your project's name]`. Go to `node_modules` ➜ `aliyun-oss-react-native` ➜ `AliyunSDK`. Add `AliyunOSSiOS.framework`, and select *Copy items if needed* in the pop-up box.
 
 #### Android
 1. Add the following lines to `android/settings.gradle`:
 
 ```gradle
-include ':react-native-rn-sdk'
-project(':react-native-rn-sdk').projectDir = new File(rootProject.projectDir, '../node_modules/aliyun-oss-rn-sdk/android')
+include ':react-native-react-sdk'
+project(':react-native-react-sdk').projectDir = new File(rootProject.projectDir, '../node_modules/aliyun-oss-rn-sdk/android')
 ```
 
 2. Add the compile line to the dependencies in `android/app/build.gradle`:
@@ -221,33 +228,33 @@ AliyunOSS.initWithSigner(signature, accessKey, endPoint, configuration);
 
 init client with SecurityToken
 
-```
-AliyunOSS.initWithSecurityToken(signature, accessKey, endPoint, configuration);
+AliyunOSS.initWithSecurityToken(SecurityToken, accessKeyId, accessKeySecret, endPoint, configuration);
+
 ```
 
 ### initWithServerSTS
 
-init auth client with loacl auth server
+init auth client with local auth server
 
 ```javascript
-AliyunOSS.initWithSecurityToken(signature, accessKey, endPoint, configuration);
+AliyunOSS.initWithServerSTS(/*local auth server*/, endPoint, configuration);
 ```
 
 ### asyncUpload
 
 ```
-AliyunOSS.asyncUpload(bucketname, objectKye, filepath).then().catch()
+AliyunOSS.asyncUpload(bucketname, objectKey, filepath).then().catch()
 ```
 ### asyncAppendObject
 ### asyncResumableUpload
 ### initMultipartUpload
 
 ```javascript
- AliyunOSS.initMultipartUpload(bucketname,objectkey).then((e)=>{
-         console.log(e)
-         //e is uploadId
+ AliyunOSS.initMultipartUpload(bucketname,objectkey).then((e) => {
+      //e is uploadId
+      console.log(e)
     }).catch((error) => {
-        console.log(error)
+      console.log(error)
  })
 ```
 ### multipartUpload

@@ -51,7 +51,7 @@ yarn install aliyun-oss-react-native --save
 react native项目下运行`react-native link`命令
 
 ```script
-react-native link
+react-native link aliyun-oss-react-native
 ```
 
 注意：由于react native脚手架不同版本的问题，有时候自动安装可能会失败，可手动添加android和iOS的的依赖库。同样为了兼容IPv6-Only网络，iOS工程中需参考aliyun-oss-ios-sdk说明中引入以下包。
@@ -193,7 +193,7 @@ AliyunOSS.enableDevMode()
 
 ### initWithPlainTextAccessKey(不建议)
 
-该接口需要通过明文授权acckeyId和accekeySecret，开发者这可以使用，但是我们不建议
+该接口需要通过明文授权accesskeyId和accesskeySecret，开发者这可以使用，但是我们不建议
 
 ```javascript
 const endPoint = "XXX"
@@ -202,7 +202,7 @@ const configuration = {
     timeoutIntervalForRequest: 30,
     timeoutIntervalForResource: 24 * 60 * 60
  };
-AliyunOSS.initWithPlainTextAccessKey(accessKey, secretKey, endPoint, configuration);
+AliyunOSS.initWithPlainTextAccessKey(accesskeyId, accesskeySecret, endPoint, configuration);
 ```
 
 ### initWithSigner
@@ -218,7 +218,7 @@ AliyunOSS.initWithSigner(signature, accessKey, endPoint, configuration);
 该接口通过SecurityToken授权，参考[STS访问控制](https://help.aliyun.com/document_detail/32046.html?spm=a2c4g.11186623.2.8.dfV9i0),使用可查看
 
 ```
-AliyunOSS.initWithSecurityToken(signature, accessKey, endPoint, configuration);
+AliyunOSS.initWithSecurityToken(SecurityToken, accessKeyId, accessKeySecret, endPoint, configuration);
 ```
 
 ### initWithServerSTS
@@ -226,7 +226,7 @@ AliyunOSS.initWithSecurityToken(signature, accessKey, endPoint, configuration);
 该接口通过本地鉴权服务器授权，使用可查看
 
 ```javascript
-AliyunOSS.initWithSecurityToken(signature, accessKey, endPoint, configuration);
+AliyunOSS.initWithSecurityToken(/*local auth server*/, endPoint, configuration);
 ```
 
 ### asyncUpload
@@ -241,10 +241,10 @@ AliyunOSS.asyncUpload(bucketname, objectKey, filepath).then().catch()
 
 ```javascript
  AliyunOSS.initMultipartUpload(bucketname,objectkey).then((e)=>{
-         console.log(e)
-         //e 为uploadId
+       //e 为uploadId
+       console.log(e)
     }).catch((error) => {
-        console.log(error)
+       console.log(error)
  })
 ```
 ### multipartUpload
@@ -280,7 +280,7 @@ AliyunOSS.listParts(multipartBucket,multipartObjectKey,upoadId).then((e)=>{
 
 ```
  // xxx为图片处理选项，具体可查看官网
- AliyunOSS.asyncDownload(bucketname,objectkey,{"x-oss-process":'xxxx'}).then((e) => {
+ AliyunOSS.asyncDownload(bucketname,objectkey,{"x-oss-process": 'xxxx'}).then((e) => {
     console.log(e)
   }).catch((e)=>{
     console.log(e)
