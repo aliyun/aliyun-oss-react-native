@@ -80,8 +80,8 @@ pod 'aliyun-oss-react-native', :path => '../node_modules/aliyun-oss-react-native
 1. Add the following lines to `android/settings.gradle`:
 
 ```gradle
-include ':react-native-react-sdk'
-project(':react-native-react-sdk').projectDir = new File(rootProject.projectDir, '../node_modules/aliyun-oss-rn-sdk/android')
+include ':aliyun-oss-react-native'
+project(':aliyun-oss-react-native').projectDir = new File(rootProject.projectDir, '../node_modules/aliyun-oss-react-native/android')
 ```
 
 2. Add the compile line to the dependencies in `android/app/build.gradle`:
