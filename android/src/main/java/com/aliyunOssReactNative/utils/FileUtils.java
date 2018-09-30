@@ -1,4 +1,4 @@
-package com.reactlibrary.utils;
+package com.aliyunOssReactNative.utils;
 
 import android.content.Context;
 import android.net.Uri;

@@ -1,4 +1,4 @@
-package com.reactlibrary;
+package com.aliyunOssReactNative;
 
 import android.util.Log;
 

@@ -99,7 +99,7 @@ dependencies {
 4. Add the import and link the package in `MainApplication.java`:
 
 ```java
-import com.reactlibrary.RNAliyunOssPackage;
+import com.aliyunOssReactNative.RNAliyunOssPackage;
 
  public class MainApplication extends Application implements ReactApplication {
   @Override

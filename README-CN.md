@@ -91,7 +91,7 @@ pod 'aliyun-oss-react-native', :path => '../node_modules/aliyun-oss-react-native
 
 3. `MainApplication.java`
     ```java
-   import com.reactlibrary.RNAliyunOssPackage;
+   import com.aliyunOssReactNative.RNAliyunOssPackage;
 
     public class MainApplication extends Application implements ReactApplication {
      @Override
