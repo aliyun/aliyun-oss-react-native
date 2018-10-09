@@ -344,8 +344,20 @@ AliyunOSS.asyncListBuckets().then((e) => {
 ```
 ### asyncListObjects
 
+list objects in some conditions
+
+parameters:
+
+- name {String} bucket name
+- options {Object}
+  - [delimiter] {String} 
+  - [prefix] {String} search buckets using `prefix` key
+  - [marker] {String} search start from `marker`, including `marker` key
+  - [max-keys] {String|Number} max buckets, default is `100`, limit to `1000` 
 ```
- AliyunOSS.asyncListObjects('luozhang002').then((e)=>{
+ AliyunOSS.asyncListObjects('luozhang002', {
+    prefix:'xxxx'
+}).then((e)=>{
     console.log(e)
   }).catch((e)=>{
      console.log(e)

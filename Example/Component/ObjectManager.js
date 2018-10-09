@@ -16,51 +16,51 @@ import { styles } from '../CSS/global.js'
 export class ObjectManager extends Component {  
   render() {  
      return(
-           <View style={styles.item}>
-      <Text style={styles.description}>管理文件</Text>
-      <View style={styles.detailitem}>
-        <View style={styles.button}>
-          <Button  style={styles.button}
-            onPress={this.clickHandle.bind(this,"asyncHeadObject")}
-            title="asyncHeadObject"
-            color="#841584"
-          />
-        </View>
+      <View style={styles.item}>
+        <Text style={styles.description}>管理文件</Text>
+        <View style={styles.detailitem}>
+          <View style={styles.button}>
+            <Button  style={styles.button}
+              onPress={this.clickHandle.bind(this,"asyncHeadObject")}
+              title="asyncHeadObject"
+              color="#841584"
+            />
+          </View>
 
-        <View style={styles.button}>
-          <Button  style={styles.button}
-            onPress={this.clickHandle.bind(this,"asyncListObjects")}
-            title="asyncListObjects"
-            color="#841584"
-          />
-        </View>
+          <View style={styles.button}>
+            <Button  style={styles.button}
+              onPress={this.clickHandle.bind(this,"asyncListObjects")}
+              title="asyncListObjects"
+              color="#841584"
+            />
+          </View>
 
-        <View style={styles.button}>
-          <Button  style={styles.button}
-            onPress={this.clickHandle.bind(this,"asyncCopyObject")}
-            title="asyncCopyObject"
-            color="#841584"
-          />
-        </View>
+          <View style={styles.button}>
+            <Button  style={styles.button}
+              onPress={this.clickHandle.bind(this,"asyncCopyObject")}
+              title="asyncCopyObject"
+              color="#841584"
+            />
+          </View>
 
-        <View style={styles.button}>
-          <Button  style={styles.button}
-            onPress={this.clickHandle.bind(this,"doesObjectExist")}
-            title="doesObjectExist"
-            color="#841584"
-          />
-        </View>
+          <View style={styles.button}>
+            <Button  style={styles.button}
+              onPress={this.clickHandle.bind(this,"doesObjectExist")}
+              title="doesObjectExist"
+              color="#841584"
+            />
+          </View>
 
-        <View style={styles.button}>
-          <Button  style={styles.button}
-            onPress={this.clickHandle.bind(this,"asyncDeleteObject")}
-            title="asyncDeleteObject"
-            color="#841584"
-          />
+          <View style={styles.button}>
+            <Button  style={styles.button}
+              onPress={this.clickHandle.bind(this,"asyncDeleteObject")}
+              title="asyncDeleteObject"
+              color="#841584"
+            />
+          </View>
         </View>
       </View>
-    </View>
-     )  
+    )  
   } 
   clickHandle(e) {
     switch(e) {
@@ -74,7 +74,9 @@ export class ObjectManager extends Component {
 
       case "asyncListObjects" : {
         console.log("asyncListObjects")
-        AliyunOSS.asyncListObjects('luozhang002').then((e) => {
+        AliyunOSS.asyncListObjects('luozhang002',{
+          prefix:'xxxx'
+        }).then((e) => {
           console.log(e)
         }).catch((e)=>{
           console.log(e)
@@ -108,5 +110,4 @@ export class ObjectManager extends Component {
       default :break;
     }
   }
-
  }

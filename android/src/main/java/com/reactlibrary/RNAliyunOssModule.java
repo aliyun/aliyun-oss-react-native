@@ -332,8 +332,8 @@ public class RNAliyunOssModule extends ReactContextBaseJavaModule {
      * @param promise
      */
     @ReactMethod
-    public void asyncListObjects(String bucketName,String prefix,final Promise promise) {
-        mObjectManager.asyncListObjects(bucketName, prefix, promise);
+    public void asyncListObjects(String bucketName,ReadableMap options,final Promise promise) {
+        mObjectManager.asyncListObjects(bucketName, options, promise);
     }
 
     /**
