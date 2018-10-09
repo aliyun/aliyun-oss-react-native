@@ -143,8 +143,8 @@ export default AliyunOSS = {
      * Asynchronously getAsyncObjects
      */
 
-    asyncListObjects (bucketName,prefix='') {
-        return RNAliyunOSS.asyncListObjects(bucketName,prefix,)
+    asyncListObjects (bucketName,options) {
+        return RNAliyunOSS.asyncListObjects(bucketName,options)
     },
 
 
