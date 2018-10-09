@@ -13,21 +13,33 @@
  asyncListObjects
  */
 
-RCT_REMAP_METHOD(asyncListObjects, bucketName:(NSString*)bucketName prefix:(NSString*)prefix resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
+RCT_REMAP_METHOD(asyncListObjects, bucketName:(NSString*)bucketName options:(NSDictionary*)options resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
     OSSGetBucketRequest * getBucket = [OSSGetBucketRequest new];
     getBucket.bucketName = bucketName;
     // 可选参数，具体含义参考：https://docs.aliyun.com/#/pub/oss/api-reference/bucket&GetBucket
     // getBucket.marker = @"";
-    getBucket.prefix = prefix;
     // getBucket.delimiter = @"";
+    
+    if([options objectForKey:@"delimiter"]) {
+        getBucket.delimiter = [options objectForKey:@"delimiter"];
+    }
+    
+    if([options objectForKey:@"marker"]) {
+        getBucket.delimiter = [options objectForKey:@"marker"];
+    }
+    
+    if([options objectForKey:@"prefix"]) {
+        getBucket.delimiter = [options objectForKey:@"prefix"];
+    }
+    
+    if([options objectForKey:@"maxkeys"]) {
+        getBucket.delimiter = [options objectForKey:@"maxkeys"];
+    }
+    
     OSSTask * getBucketTask = [self.client getBucket:getBucket];
     [getBucketTask continueWithBlock:^id(OSSTask *task) {
         if (!task.error) {
             OSSGetBucketResult * result = task.result;
-            //            NSLog(@"get bucket success!");
-            //            for (NSDictionary * objectInfo in result.contents) {
-            //                NSLog(@"list object: %@", objectInfo);
-            //            }
             resolve(result.contents);
         } else {
             NSLog(@"get bucket failed, error: %@", task.error);
