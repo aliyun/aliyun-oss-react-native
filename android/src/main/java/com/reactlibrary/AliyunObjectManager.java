@@ -92,12 +92,27 @@ public class AliyunObjectManager {
     /**
      * asyncListObjects
      * @param bucketName
-     * @param prefix
+     * @param opitons {delimiter|prefix|marker|maxkeys}
      * @param promise
      */
-    public void asyncListObjects(String bucketName,String prefix,final Promise promise) {
+    public void asyncListObjects(String bucketName, ReadableMap options, final Promise promise) {
         ListObjectsRequest listObjects = new ListObjectsRequest(bucketName);
-        listObjects.setPrefix(prefix);
+
+        if(options.hasKey("prefix")) {
+            listObjects.setPrefix(options.getString("prefix"));
+        }
+
+        if(options.hasKey("delimiter")) {
+            listObjects.setDelimiter(options.getString("delimiter"));
+        }
+
+        if(options.hasKey("marker")) {
+            listObjects.setMarker(options.getString("delimiter"));
+        }
+
+        if(options.hasKey("maxkeys")) {
+            listObjects.setMaxKeys(options.getInt(String.valueOf(options.getInt("maxkeys"))));
+        }
 
         // set success 、set fail 、set async request
         OSSAsyncTask task = mOSS.asyncListObjects(listObjects, new OSSCompletedCallback<ListObjectsRequest, ListObjectsResult>() {
