@@ -24,10 +24,14 @@ public class FileUtils {
             InputStream is = context.getContentResolver().openInputStream(srcUri);
             if (is == null) return;
             OutputStream fos = new FileOutputStream(dstFile);
-            int ch = 0;
+
+            byte[] bytes = new byte[1024];
+
+            int count = is.read(bytes, 0, 1024);
             try {
-                while((ch=is.read()) != -1){
-                    fos.write(ch);
+                while (count > 0){
+                    fos.write(bytes, 0, count);
+                    count = is.read(bytes, 0, 1024);
                 }
             } catch (IOException e1) {
                 e1.printStackTrace();
