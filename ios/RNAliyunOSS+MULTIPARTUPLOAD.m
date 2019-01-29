@@ -41,6 +41,7 @@ RCT_REMAP_METHOD(multipartUpload, withBucketName:(NSString *)bucketName objectKe
     if ([filePath rangeOfString:NSHomeDirectory()].location == NSNotFound) {
         filePath = [NSHomeDirectory() stringByAppendingPathComponent:filePath];
     }
+    filePath = [filePath stringByReplacingOccurrencesOfString:@"file://" withString:@""];
     
     //分片上传数量
     int chuckCount = 2;
