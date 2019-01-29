@@ -62,7 +62,15 @@ RCT_REMAP_METHOD(multipartUpload, withBucketName:(NSString *)bucketName objectKe
         uploadPart.partNumber = i; // part number start from 1
         NSFileHandle* readHandle = [NSFileHandle fileHandleForReadingAtPath:filePath];
         [readHandle seekToFileOffset:offset * (i -1)];
-        NSData* data = [readHandle readDataOfLength:offset];
+        NSData* data;
+        if (i == chuckCount)
+        {
+            NSUInteger lastLength = offset + fileSize % chuckCount;
+            data = [readHandle readDataOfLength:lastLength];
+        }else
+        {
+            data = [readHandle readDataOfLength:offset];
+        }
         uploadPart.uploadPartData = data;
         OSSTask * uploadPartTask = [self.client uploadPart:uploadPart];
         [uploadPartTask waitUntilFinished];
