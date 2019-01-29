@@ -38,7 +38,10 @@ RCT_REMAP_METHOD(initMultipartUpload,withBucketName:(NSString *)bucketName objec
  */
 RCT_REMAP_METHOD(multipartUpload, withBucketName:(NSString *)bucketName objectKey:(NSString *)objectKey uploadId:(NSString*)uploadId withFilePath:(NSString*)filePath  options:(NSDictionary*)options resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject){
     __block NSMutableArray * partInfos = [NSMutableArray new];
-    filePath = [NSHomeDirectory() stringByAppendingPathComponent:filePath];
+    if ([filePath rangeOfString:NSHomeDirectory()].location == NSNotFound) {
+        filePath = [NSHomeDirectory() stringByAppendingPathComponent:filePath];
+    }
+    
     //分片上传数量
     int chuckCount = 2;
     //获取文件大小
