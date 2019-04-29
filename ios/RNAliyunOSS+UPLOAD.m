@@ -19,6 +19,26 @@ RCT_REMAP_METHOD(asyncUpload, asyncUploadWithBucketName:(NSString *)bucketName o
         put.objectKey = objectKey;
         put.uploadingData = data;
         
+        if([[options allKeys] containsObject:@"callbackVars"]) {
+            if ([options[@"callbackVars"] isKindOfClass: [NSDictionary class]]) {
+                put.callbackVar = [options[@"callbackVars"];
+            } else {
+                NSLog(@"callbackVars 类型需要为字典类型");
+            }
+        } else {
+            NSLog(@"options未包含 callbackVars 字段");
+        }
+                                   
+        if([[options allKeys] containsObject:@"callbackParam"]) {
+           if ([options[@"callbackParam"] isKindOfClass: [NSDictionary class]]) {
+               put.callbackParam = [options[@"callbackParam"];
+           } else {
+               NSLog(@"callbackParam 类型需要为字典类型");
+           }
+        } else {
+           NSLog(@"options未包含 callbackParam 字段");
+        }
+
         // 设置Content-Type，可选
         //        put.contentType = @"application/octet-stream";
         //        // 设置MD5校验，可选
