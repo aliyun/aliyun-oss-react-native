@@ -21,7 +21,7 @@ RCT_REMAP_METHOD(asyncUpload, asyncUploadWithBucketName:(NSString *)bucketName o
         
         if([[options allKeys] containsObject:@"callbackVars"]) {
             if ([options[@"callbackVars"] isKindOfClass: [NSDictionary class]]) {
-                put.callbackVar = [options[@"callbackVars"];
+                put.callbackVar = options[@"callbackVars"];
             } else {
                 NSLog(@"callbackVars 类型需要为字典类型");
             }
@@ -31,7 +31,7 @@ RCT_REMAP_METHOD(asyncUpload, asyncUploadWithBucketName:(NSString *)bucketName o
                                    
         if([[options allKeys] containsObject:@"callbackParam"]) {
            if ([options[@"callbackParam"] isKindOfClass: [NSDictionary class]]) {
-               put.callbackParam = [options[@"callbackParam"];
+               put.callbackParam = options[@"callbackParam"];
            } else {
                NSLog(@"callbackParam 类型需要为字典类型");
            }
