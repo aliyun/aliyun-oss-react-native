@@ -242,9 +242,16 @@ AliyunOSS.initWithServerSTS(/*local auth server*/, endPoint, configuration);
 
 ### asyncUpload
 
+```javascript
+const option = {
+    // optional
+    callbackParam:{},
+    // optional
+    callbackVars:{},
+}
+AliyunOSS.asyncUpload(bucketname, objectKey, filepath, option).then().catch()
 ```
-AliyunOSS.asyncUpload(bucketname, objectKey, filepath).then().catch()
-```
+callbackParam与callbackVars参数格式请参考[阿里云文档](https://help.aliyun.com/document_detail/31989.html?spm=a2c4g.11186623.6.703.395472c1fxLRVz)
 ### asyncAppendObject
 ### asyncResumableUpload
 ### initMultipartUpload
