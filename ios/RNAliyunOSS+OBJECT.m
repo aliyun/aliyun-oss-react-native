@@ -25,15 +25,15 @@ RCT_REMAP_METHOD(asyncListObjects, bucketName:(NSString*)bucketName options:(NSD
     }
     
     if([options objectForKey:@"marker"]) {
-        getBucket.delimiter = [options objectForKey:@"marker"];
+        getBucket.marker = [options objectForKey:@"marker"];
     }
     
     if([options objectForKey:@"prefix"]) {
-        getBucket.delimiter = [options objectForKey:@"prefix"];
+        getBucket.prefix = [options objectForKey:@"prefix"];
     }
     
     if([options objectForKey:@"maxkeys"]) {
-        getBucket.delimiter = [options objectForKey:@"maxkeys"];
+        getBucket.maxKeys = [options objectForKey:@"maxkeys"];
     }
     
     OSSTask * getBucketTask = [self.client getBucket:getBucket];
