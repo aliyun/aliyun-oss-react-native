@@ -93,6 +93,9 @@ public class AliyunUploadManager {
         }
         // init upload request
         PutObjectRequest put = new PutObjectRequest(bucketName, ossFile, sourceFile);
+        if (options != null && options.getString("acl") != null) {
+            put.setAcl(options.getString("acl"));
+        }
         ObjectMetadata metadata = new ObjectMetadata();
         metadata.setContentType("application/octet-stream");
         put.setMetadata(metadata);

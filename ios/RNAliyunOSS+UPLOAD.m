@@ -13,11 +13,14 @@
 RCT_REMAP_METHOD(asyncUpload, asyncUploadWithBucketName:(NSString *)bucketName objectKey:(NSString *)objectKey filepath:(NSString *)filepath options:(NSDictionary*)options resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject){
     
     [self beginUploadingWithFilepath:filepath resultBlock:^(NSData *data) {
-        OSSPutObjectRequest *put = [OSSPutObjectRequest new];
+        OSSPutObjectACLRequest *put = [OSSPutObjectACLRequest new];
         //required fields
         put.bucketName = bucketName;
         put.objectKey = objectKey;
         put.uploadingData = data;
+        if (options[@"acl"]) {
+            put.acl = options[@"acl"];
+        }
         
         // 设置Content-Type，可选
         //        put.contentType = @"application/octet-stream";
