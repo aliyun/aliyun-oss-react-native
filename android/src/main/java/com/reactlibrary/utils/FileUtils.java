@@ -71,7 +71,7 @@ public class FileUtils {
         //copy file and send new file path
         String fileName = getFileName(contentUri);
         if (!TextUtils.isEmpty(fileName)) {
-            File copyFile = new File( Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + fileName);
+            File copyFile = new File(context.getExternalFilesDir(null).getAbsolutePath() + File.separator + fileName);
             FileUtils.copy(context, contentUri, copyFile);
             return copyFile.getAbsolutePath();
         }
